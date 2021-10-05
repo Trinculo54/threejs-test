@@ -80,7 +80,7 @@ a, button, input, select {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0);
 }
 #content button {
     background: transparent;
@@ -103,7 +103,7 @@ a, button, input, select {
     align-items: inherit;
     justify-content:inherit;
     flex-direction: column;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0);
 }
 #link button {
     background: transparent;
@@ -127,7 +127,7 @@ a, button, input, select {
     align-items: flex-end;
     justify-content: end;
     flex-direction: column;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0);
 }
 #notSupported {
     width: 50%;
