@@ -5,7 +5,8 @@ body {
     font-family: Monospace;
     font-size: 13px;
     line-height: 24px;
-    overscroll-behavior: none;
+    overscroll-behavior: initial;
+    overflow: hidden;
 }
 a {
     color: #ff0;
@@ -70,64 +71,82 @@ a, button, input, select {
 }
 #content {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    z-index: 7;
+    top: 60%;
+    left: 25%;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
+    overflow: hidden;
     background: rgba(0,0,0,0);
 }
 #content button {
     background: transparent;
-    border: 0;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 4px;
+    z-index: 7;
     color: #ffffff;
     padding: 12px 18px;
+    overflow: hidden;
     text-transform: uppercase;
     cursor: pointer;
 }
-#link {
-    position: relative;
+#New {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
+    top: 75%;
+    left: 25%;
+    z-index: 8;
+    width: 50%;
     display: flex;
-    align-items: inherit;
-    justify-content:inherit;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    overflow: hidden;
     background: rgba(0,0,0,0);
 }
-#link button {
+#New button {
     background: transparent;
-    border: 0;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 4px;
     color: #ffffff;
+    z-index: 8;
     padding: 12px 18px;
+    overflow: hidden;
     text-transform: uppercase;
     cursor: pointer;
 }
 #hardware {
     position: absolute;
     font-size: 10px;
-    z-index: 2;
     bottom: 5px;
     right: 10px;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: flex-end;
     justify-content: end;
     flex-direction: column;
     background: rgba(0,0,0,0);
+}
+#Title {
+    position: absolute;
+    font-size: 40px;
+    bottom: 26%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #notSupported {
     width: 50%;
